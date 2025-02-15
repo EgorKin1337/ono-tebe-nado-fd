@@ -15,7 +15,7 @@
 
 .menu__list {
   display: flex;
-  gap: 26px;
+  gap: 28.5px;
 }
 
 .header__logo {
@@ -26,7 +26,7 @@
   max-width: 240px;
   justify-self: end;
   display: flex;
-  font-style: italic;
+  font-style: normal;
   flex-direction: column;
 }
 
@@ -86,6 +86,7 @@ header address a {
   font-size: 22px;
   font-weight: 500;
   line-height: 25.83px;
+  text-transform: uppercase;
 }
 
 .lots {
@@ -94,17 +95,18 @@ header address a {
   height: 723px;
 }
 
-.lots__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  flex-wrap: wrap;
-  gap: 22px;
-}
-
 .lots__title {
   position: relative;
   top: 0;
   left: 40px;
+}
+
+.lots__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 23px;
 }
 
 .lot-1 {
@@ -117,10 +119,6 @@ header address a {
 
 .lot-3 {
   background-image: url(../images/backgraund-images/lot-3.jpg);
-}
-
-.lots__list {
-  margin-top: 27px;
 }
 
 .lots__link {
