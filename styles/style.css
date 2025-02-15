@@ -132,7 +132,7 @@ header address a {
 
 .about {
   display: grid;
-  grid-template-columns: min-content 693px;
+  grid-template-columns: min-content 690px;
   grid-template-rows: min-content 312px;
   column-gap: 72px;
   padding-top: 35px;
