@@ -1,11 +1,13 @@
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  max-width: 1100px;
+  width: 1100px;
   margin: 0 auto;
-  padding: 0;
+
   font-family: 'Raleway', sans-serif;
 }
 
@@ -23,18 +25,26 @@ a {
   z-index: 1;
 }
 
-ul {
-  list-style-type: none;
+button {
+  z-index: 1;
 }
 
-.header .menu__list li + li {
-  list-style-type: circle;
+ul {
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
   border-bottom: 1px solid #000;
   color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.header .menu__list li + li {
+  list-style-type: circle;
 }
 
 .link__active {
@@ -84,7 +94,7 @@ a {
   height: 596px;
 }
 
-.lot-item::before {
+.lot-item::before, .cover::before {
   content: "";
   height: inherit;
   background-color: rgba(0, 0, 0, 0.6);

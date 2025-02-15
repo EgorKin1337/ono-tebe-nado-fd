@@ -42,6 +42,7 @@ header address a {
   padding: 165px 50px 50px;
   color: #fff;
   margin-bottom: 180px;
+  position: relative;
 }
 
 .title {
@@ -133,6 +134,7 @@ header address a {
 
 .about__title {
   align-self: center;
+  text-transform: uppercase;
 }
 
 .about__info {
