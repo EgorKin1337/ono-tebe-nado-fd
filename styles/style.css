@@ -67,6 +67,7 @@ header address a {
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 .cover__button {
@@ -130,6 +131,7 @@ header address a {
   column-gap: 72px;
   padding-top: 35px;
   padding-left: 47px;
+  padding: 35px 24px 0 71px;
 }
 
 .about__title {

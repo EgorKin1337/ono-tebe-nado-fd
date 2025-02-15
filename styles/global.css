@@ -46,6 +46,10 @@ a {
   border-bottom: none;
 }
 
+.address__gen {
+  font-style: italic;
+}
+
 .cover,
 .lot-item {
   background-size: cover;
@@ -58,13 +62,14 @@ a {
   font-size: 100px;
   font-weight: 700;
   line-height: 115px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.26em;
 }
 
 .section__title {
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
+  text-transform: uppercase;
 }
 
 .lots__list-item {
@@ -102,6 +107,7 @@ a {
   font-weight: 700;
   line-height: 26.4px;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .lots__list-item__text {
