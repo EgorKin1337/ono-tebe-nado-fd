@@ -1,13 +1,12 @@
-*,
-*::before,
-*::after {
+html {
   box-sizing: border-box;
 }
 
 body {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -16,23 +15,102 @@ h3,
 h4,
 h5,
 h6,
-p,
 ul,
-ol,
-li,
-blockquote {
+p,
+a {
   margin: 0;
   padding: 0;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header .menu__list li + li {
+  list-style-type: circle;
 }
 
 a {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
   color: inherit;
 }
 
-img {
-  width: 100%;
+.link__active {
+  border-bottom: none;
 }
 
-button {
-  font: inherit;
+.cover,
+.lot-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.cover__title {
+  align-self: center;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+}
+
+.section__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+}
+
+.lots__list-item {
+  max-width: 334px;
+}
+
+.lot-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 596px;
+  padding: 48px 40px;
+  color: #fff;
+  position: relative;
+  inset: 0;
+}
+
+.lots__list-item a {
+  border: none;
+  display: block;
+  height: 596px;
+}
+
+.lot-item::before {
+  content: "";
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.lots__list-item__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-decoration: underline;
+}
+
+.lots__list-item__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer__massage a {
+  border: none;
 }
