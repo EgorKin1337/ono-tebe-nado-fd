@@ -7,7 +7,6 @@
 body {
   width: 1100px;
   margin: 0 auto;
-
   font-family: 'Raleway', sans-serif;
 }
 
@@ -37,10 +36,6 @@ a {
   text-decoration: none;
   border-bottom: 1px solid #000;
   color: inherit;
-}
-
-img {
-  width: 100%;
 }
 
 .header .menu__list li + li {
