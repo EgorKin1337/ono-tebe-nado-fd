@@ -46,10 +46,6 @@ a {
   border-bottom: none;
 }
 
-.address__gen {
-  font-style: italic;
-}
-
 .cover,
 .lot-item {
   background-size: cover;
