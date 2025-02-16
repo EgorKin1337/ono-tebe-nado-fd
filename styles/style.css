@@ -13,32 +13,66 @@
   max-width: max-content;
 }
 
+
 .menu__list {
   display: flex;
   gap: 28.5px;
+}
+
+.link__active {
+  border-bottom: none;
+}
+
+.header .menu__list li + li {
+  list-style-type: circle;
 }
 
 .header__logo {
   border: none;
 }
 
-.header__address {
+.address {
   max-width: 240px;
-  justify-self: end;
   display: flex;
   font-style: normal;
   flex-direction: column;
 }
 
-header address a {
+.header .address {
+  justify-self: end;
+}
+
+.address a {
   max-width: max-content;
+}
+
+.cover,
+.lot-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.lot-item::before, .cover::before {
+  content: "";
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.section__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-transform: uppercase;
 }
 
 .cover{
   display: flex;
   flex-direction: column;
   gap: 106px;
-  max-height: 757px;
+  min-height: 757px;
   background-image: url(../images/backgraund-images/cover.jpg);
   padding: 165px 50px 50px;
   color: #fff;
@@ -46,11 +80,18 @@ header address a {
   position: relative;
 }
 
+.cover__title {
+  align-self: center;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 0.26em;
+}
+
 .title {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 20px;
-  height: 385px;
   text-transform: uppercase;
 }
 
@@ -79,7 +120,7 @@ header address a {
 .cover__button {
   width: 256px;
   padding: 12px 31px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background-clip: text;
   color: inherit;
   font-family: 'Raleway', sans-serif;
@@ -92,13 +133,10 @@ header address a {
 .lots {
   padding: 0 24px 0;
   margin-bottom: 120px;
-  height: 723px;
 }
 
 .lots__title {
-  position: relative;
-  top: 0;
-  left: 40px;
+  padding-left: 40px;
 }
 
 .lots__list {
@@ -109,31 +147,67 @@ header address a {
   margin-top: 23px;
 }
 
-.lot-1 {
-  background-image: url(../images/backgraund-images/lot-1.jpg);
+.lots__list-item {
+  max-width: 334px;
+  margin-bottom: 30px;
 }
 
-.lot-2 {
-  background-image: url(../images/backgraund-images/lot-2.jpg);
+.lot-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 596px;
+  padding: 48px 40px;
+  color: #fff;
+  position: relative;
+  inset: 0;
 }
 
-.lot-3 {
-  background-image: url(../images/backgraund-images/lot-3.jpg);
+.lots__list-item a {
+  border: none;
+  display: block;
+  min-height: 596px;
+}
+
+.lots__list-item__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.lots__list-item__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .lots__link {
-  position: relative;
-  top: 30px;
-  left: 40px;
+  max-width: min-content;
+  margin-left: 40px;
   font-size: 20px;
   font-weight: 400;
   line-height: 23.48px;
 }
 
+.lot-movies {
+  background-image: url(../images/backgraund-images/lot-1.jpg);
+}
+
+.lot-books {
+  background-image: url(../images/backgraund-images/lot-2.jpg);
+}
+
+.lot-pint {
+  background-image: url(../images/backgraund-images/lot-3.jpg);
+}
+
 .about {
   display: grid;
   grid-template-columns: min-content 690px;
-  grid-template-rows: min-content 312px;
+  grid-template-rows: min-content 1fr;
   column-gap: 72px;
   padding-top: 35px;
   padding-left: 47px;
@@ -150,6 +224,12 @@ header address a {
   grid-row-start: 2;
 }
 
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .about__text + .about__text {
   margin-top: 24px;
 }
@@ -164,13 +244,8 @@ header address a {
   line-height: 21.13px;
 }
 
-.footer__address {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.footer .address {
   max-width: 264px;
-  line-height: 24.3px;
-  font-style: normal;
 }
 
 .footer__list {
@@ -180,5 +255,9 @@ header address a {
 .footer__massage {
   display: flex;
   gap: 48px;
+}
+
+.footer__massage a {
+  border: none;
 }
 
