@@ -57,9 +57,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  position: relative;
 }
 
-.lot-item::before, .cover::before {
+.eclips-lens::before {
   content: "";
   height: inherit;
   background-color: rgba(0, 0, 0, 0.6);
@@ -83,7 +84,6 @@
   padding: 165px 50px 50px;
   color: #fff;
   margin-bottom: 180px;
-  position: relative;
 }
 
 .title {
@@ -172,8 +172,7 @@
   min-height: 596px;
   padding: 48px 40px;
   color: #fff;
-  position: relative;
-  inset: 0;
+
 }
 
 .lots__list-item a {
